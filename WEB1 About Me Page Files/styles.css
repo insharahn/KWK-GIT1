@@ -1,0 +1,196 @@
+body {
+  background-color: #feede8;
+  color: #34568f;
+  font-family: "Fira Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f5babe;
+  padding: 18px 0;
+  border-bottom: 2px dashed #d55984; /*dashed border cause it's cute*/
+}
+
+/*the links in the header*/
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*links in header*/
+.header-menu li a {
+  color: #34568f;
+  font-weight: bold;
+  font-family: "Libertinus Mono", monospace;
+  text-decoration: none; /*no underline*/
+}
+
+.header-menu li a:hover {
+  color: #d55984;
+  text-decoration: underline; /*bring underline back upon hover*/
+}
+
+.header-menu li a:active {
+  /*selected link*/
+  color: blue;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Jost", sans-serif;
+  margin: 10px 0;
+}
+
+h2 {
+  font-family: "Jost", sans-serif;
+  margin: 10px 0;
+  color: #d55984;
+  font-style: italic;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: "Jost", sans-serif;
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+h4 {
+  font-family: "Jost", sans-serif;
+  margin: 10px 0;
+}
+
+/*formatting for the bio part*/
+.bio {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/*paras*/
+.intro-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*image and aside*/
+.intro-side {
+  display: flex;
+  flex-direction: row; /*image and aside side by side*/
+  align-items: center;
+  gap: 20px;
+  width: 100%; /*let the elements stretch to 100*/
+}
+
+.cat-img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0; /* prevent it from shrinking */
+}
+
+/*interested in part*/
+.represent-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center items horizontally */
+  text-align: center; /* center the text itself */
+  flex-grow: 1; /*let it grow to fit*/
+  background-color: #f5babe;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 10px;
+}
+
+.represent-me h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+/*links inside the aside*/
+.links-list {
+  list-style: square;
+  padding: 0;
+  margin: 0;
+}
+
+.links-list li {
+  margin: 6px 0;
+}
+
+.links-list a {
+  font-style: italic;
+  text-decoration: none;
+  color: #34568f;
+}
+
+.links-list a:hover {
+  text-decoration: underline;
+  color: #d55984;
+}
+
+.darkpink-text {
+  display: inline;
+  color: #d55984;
+  font-weight: bold;
+}
+
+/*image in coding journey section*/
+.text-with-cplusplus {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cplusplus-img {
+  width: 80px;
+  height: auto;
+}
+
+/*aside for fun facts*/
+.fun-facts-aside {
+  background-color: #f5babe;
+  padding: 15px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.fun-facts-aside h3 {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.novel-img {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.fun-facts {
+  list-style-type: circle;
+  font-size: 15px;
+  padding-left: 25px;
+  margin-top: 0;
+}
+
+footer {
+  background-color: #f5babe;
+  color: #34568f;
+  text-align: center;
+  padding: 15px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 2px dashed #d55984;
+}
