@@ -146,75 +146,21 @@ h4 {
 /*image in coding journey section*/
 .text-with-cplusplus {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .cplusplus-img {
   width: 80px;
   height: auto;
+  margin-top: 8px;
+  margin-right: 30px;
 }
 
-/*aside for fun facts*/
-/*
+/*fun facts section*/
 .fun-facts-aside {
-  background-color: #f5babe;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 16px;
-}
-
-.fun-facts-aside h3 {
-  margin-left: 15px;
-  margin-bottom: 10px;
-}
-
-.fun-facts-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.fun-facts-left {
-  flex: 1;
-  min-width: 250px;
-}
-
-.novel-img {
-  width: 120px;
-  height: auto;
-  align-self: flex-end;
-}
-
-.fact-btn {
-  background-color: #d55984;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 16px;
-  font-family: "Jost", sans-serif;
-  font-size: 14px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.fact-btn:hover {
-  background-color: #b84a6b;
-}
-
-.fun-fact-text {
-  margin-top: 12px;
-  font-style: italic;
-  text-align: left;
-  color: #34568f;
-  max-width: 400px;
-}*/
-
-.fun-facts-aside {
-  border-color: #f5babe;
+  border-color: #d55984;
   background-color: #feede8;
   padding: 20px;
   margin: 30px 0;
@@ -225,8 +171,10 @@ h4 {
 
 .fun-facts-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between;*/
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -239,24 +187,26 @@ h4 {
 
 .fact-btn {
   background-color: #feede8;
-  border-color: #f5babe;
+  border-color: #d55984;
   border-radius: 5px;
   border-style: dashed;
   padding: 12px 10px;
-  color: #f5babe;
+  color: #d55984;
   font-family: "Fira Mono", monospace;
   font-size: 13px;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .fact-btn:hover {
   background-color: #f5babe;
   color: #feede8;
+  border-color: #f5babe;
 }
 
 .fun-facts-body {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   align-items: flex-start;
   margin-top: 15px;
 }
@@ -270,8 +220,8 @@ h4 {
 
 .fun-fact-text {
   font-style: italic;
-  color: #34568f;
-  margin-top: 15;
+  color: #d55984;
+  margin-top: 26px;
   font-size: 16px;
   line-height: 1.5;
 }
