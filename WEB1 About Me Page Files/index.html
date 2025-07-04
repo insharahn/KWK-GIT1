@@ -114,31 +114,23 @@
         </div>
       </section>
 
+      <!--fun facts generated via function-->
       <aside class="fun-facts-aside">
-        <h3>Fun Facts</h3>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/055/299/485/non_2x/student-books-pile-high-on-transparent-background-png.png"
-          class="novel-img"
-          alt="Multiple novels piled up"
-        />
-        <ul class="fun-facts">
-          <li>
-            I prefer coding in Linux's Text Editor (in light mode) over any IDE
-            as that's how I learned programming.
-          </li>
-          <li>
-            I was born in Songkhla, Thailand, but I don't remember anything
-            about it.
-          </li>
-          <li>
-            I am the first woman on my mother's side of the family in three
-            direct generations to NOT become a doctor!
-          </li>
-          <li>
-            Assembly was my favorite language to learn. I was heartbroken to
-            find out it isn't wildly used.
-          </li>
-        </ul>
+        <div class="fun-facts-header">
+          <h3>Fun Facts</h3>
+          <button class="fact-btn" onclick="getRandomFact()">
+            Click here to get a random fun fact about me!
+          </button>
+        </div>
+
+        <div class="fun-facts-body">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/012/658/363/small/heart-shaped-love-icon-symbol-for-pictogram-app-website-logo-or-graphic-design-element-pixel-art-style-illustration-format-png.png"
+            class="heart-img"
+            alt="pixel heart"
+          />
+          <p id="funFactDisplay" class="fun-fact-text"></p>
+        </div>
       </aside>
     </main>
 
@@ -146,5 +138,8 @@
       <p>Made with <3 by Insharah Irfan Nazir | insharahnazir@gmail.com</p>
       <p>2025</p>
     </footer>
+
+    <!--link the JS file-->
+    <script src="script.js"></script>
   </body>
 </html>

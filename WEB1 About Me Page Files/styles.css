@@ -157,11 +157,12 @@ h4 {
 }
 
 /*aside for fun facts*/
+/*
 .fun-facts-aside {
   background-color: #f5babe;
-  padding: 15px;
+  padding: 20px;
   margin: 30px 0;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .fun-facts-aside h3 {
@@ -169,19 +170,110 @@ h4 {
   margin-bottom: 10px;
 }
 
-.novel-img {
-  float: right;
-  margin-top: 5px;
-  margin-right: 10px;
-  width: 100px;
-  height: auto;
+.fun-facts-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.fun-facts-left {
+  flex: 1;
+  min-width: 250px;
 }
 
-.fun-facts {
-  list-style-type: circle;
-  font-size: 15px;
-  padding-left: 25px;
+.novel-img {
+  width: 120px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.fact-btn {
+  background-color: #d55984;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.fact-btn:hover {
+  background-color: #b84a6b;
+}
+
+.fun-fact-text {
+  margin-top: 12px;
+  font-style: italic;
+  text-align: left;
+  color: #34568f;
+  max-width: 400px;
+}*/
+
+.fun-facts-aside {
+  border-color: #f5babe;
+  background-color: #feede8;
+  padding: 20px;
+  margin: 30px 0;
+  border-width: 3px;
+  border-style: dashed;
+  border-radius: 16px;
+}
+
+.fun-facts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fun-facts-header h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #34568f;
+}
+
+.fact-btn {
+  background-color: #feede8;
+  border-color: #f5babe;
+  border-radius: 5px;
+  border-style: dashed;
+  padding: 12px 10px;
+  color: #f5babe;
+  font-family: "Fira Mono", monospace;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.fact-btn:hover {
+  background-color: #f5babe;
+  color: #feede8;
+}
+
+.fun-facts-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.heart-img {
+  width: 105px;
+  height: auto;
+  flex-shrink: 0;
   margin-top: 0;
+}
+
+.fun-fact-text {
+  font-style: italic;
+  color: #34568f;
+  margin-top: 15;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 footer {
